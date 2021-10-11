@@ -16,6 +16,11 @@
 		55ABBD7F27130F9700636B96 /* LabelTestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD7E27130F9700636B96 /* LabelTestingDemoTests.swift */; };
 		55ABBD8927130F9700636B96 /* LabelTestingDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD8827130F9700636B96 /* LabelTestingDemoUITests.swift */; };
 		55ABBD8B27130F9700636B96 /* LabelTestingDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD8A27130F9700636B96 /* LabelTestingDemoUITestsLaunchTests.swift */; };
+		55ABBD982713100F00636B96 /* Sequence+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD972713100F00636B96 /* Sequence+Extension.swift */; };
+		55ABBD9A2713101F00636B96 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD992713101F00636B96 /* String+Extension.swift */; };
+		55ABBD9C2713103500636B96 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD9B2713103500636B96 /* XCTestCase+Extension.swift */; };
+		55ABBD9E2713109C00636B96 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBD9D2713109C00636B96 /* UILabel+Extension.swift */; };
+		55ABBDA22713139D00636B96 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABBDA12713139D00636B96 /* CurrencyFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		55ABBD8427130F9700636B96 /* LabelTestingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabelTestingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ABBD8827130F9700636B96 /* LabelTestingDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTestingDemoUITests.swift; sourceTree = "<group>"; };
 		55ABBD8A27130F9700636B96 /* LabelTestingDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTestingDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55ABBD972713100F00636B96 /* Sequence+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extension.swift"; sourceTree = "<group>"; };
+		55ABBD992713101F00636B96 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		55ABBD9B2713103500636B96 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		55ABBD9D2713109C00636B96 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		55ABBDA12713139D00636B96 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		55ABBD6627130F9600636B96 /* LabelTestingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				55ABBDA02713137B00636B96 /* Formatters */,
 				55ABBD6727130F9600636B96 /* AppDelegate.swift */,
 				55ABBD6927130F9600636B96 /* SceneDelegate.swift */,
 				55ABBD6B27130F9600636B96 /* ViewController.swift */,
@@ -114,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				55ABBD7E27130F9700636B96 /* LabelTestingDemoTests.swift */,
+				55ABBD9F2713112400636B96 /* Extensions */,
 			);
 			path = LabelTestingDemoTests;
 			sourceTree = "<group>";
@@ -125,6 +137,25 @@
 				55ABBD8A27130F9700636B96 /* LabelTestingDemoUITestsLaunchTests.swift */,
 			);
 			path = LabelTestingDemoUITests;
+			sourceTree = "<group>";
+		};
+		55ABBD9F2713112400636B96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55ABBD972713100F00636B96 /* Sequence+Extension.swift */,
+				55ABBD992713101F00636B96 /* String+Extension.swift */,
+				55ABBD9D2713109C00636B96 /* UILabel+Extension.swift */,
+				55ABBD9B2713103500636B96 /* XCTestCase+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55ABBDA02713137B00636B96 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				55ABBDA12713139D00636B96 /* CurrencyFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +292,7 @@
 				55ABBD6C27130F9600636B96 /* ViewController.swift in Sources */,
 				55ABBD6827130F9600636B96 /* AppDelegate.swift in Sources */,
 				55ABBD6A27130F9600636B96 /* SceneDelegate.swift in Sources */,
+				55ABBDA22713139D00636B96 /* CurrencyFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55ABBD9C2713103500636B96 /* XCTestCase+Extension.swift in Sources */,
+				55ABBD982713100F00636B96 /* Sequence+Extension.swift in Sources */,
+				55ABBD9E2713109C00636B96 /* UILabel+Extension.swift in Sources */,
+				55ABBD9A2713101F00636B96 /* String+Extension.swift in Sources */,
 				55ABBD7F27130F9700636B96 /* LabelTestingDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
